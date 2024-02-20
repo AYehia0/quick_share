@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Quick Share",
+    "version": "0.0.0",
+    "description": "Quickly share job postings to your telegram channel",
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "https://*/*"
+    ],
+    "background": {
+        "scripts": ["src/background.ts"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.linkedin.com/*"],
+            "js": ["src/main.ts"]
+        }
+    ]
+}

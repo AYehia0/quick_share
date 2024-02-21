@@ -20,7 +20,7 @@ function handleShareButtonClick(_: Event, section: HTMLElement) {
     // get the closest url by finding the closest div with data-urn attribute
     const urn = section.closest("div[data-urn]")?.getAttribute("data-urn");
 
-    const url = `https://www.linkedin.com/feed/update/${urn}`;
+    const url = `https://www.linkedin.com/embed/feed/update/${urn}`;
 
     // send the url to the telegram channel
     sendMessage(url);

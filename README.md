@@ -19,3 +19,6 @@ The extension is meant for personal use only, but if you want to give it a shot,
 2. Go to the repo and `npm i`
 3. Add your `API KEY` and `chat_id` to `.example.env` and move it `.env`.
 3. Build the extension and load it to your favourite browser. 
+
+## Todo
+- [ ] Find a way to get the url without telemetry link (XYZ commented/liked)
